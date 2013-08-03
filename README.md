@@ -10,10 +10,9 @@ Based on the results, there are probably no possible solutions to this problem.
 
 ##Installation##
 
-The code has been tested to compile with clang on Mac OSX with the following options:
-
+Compilation tested on Mac OSX using clang.  Using **make** compile with:
 ```
-clang -Wall -O4 mathtest.c -o mathtest
+make all
 ```
 
 No guarantee code will compile with any other options on any other systems. (I'm ~90% sure it won't work on Windows.)
