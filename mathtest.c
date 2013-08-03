@@ -6,6 +6,16 @@
 
 */
 
+/* TODO:
+       * Instead of throwing every value where l_0 is greater than length at a
+	     in Fsn, only throw away points at which l_0 is greater than the length
+		 at that point.  Requires changes in the v loop function.
+	   * I'm still betting there are even dumber mistakes, especially made when
+	     I started getting desperate and when I started applying the advice
+		 given on the last Thursday which I only sort of understood.
+	
+*/
+
 
 #include <stdio.h>
 #include <math.h>
@@ -50,9 +60,9 @@ int main(int argc, char *argv[])
 	for(l_0 = 0; l_0 < l_max; l_0 +=.5)
 	{
 		/* We're looking for a range of k's so duh it increments. The max
-		   value of 300 is slightly arbitrary, but based on the values gotten
-		   with the free length being at a, 300 is also really high anyway */
-		for(k = 1; k <= 300; k+=1)
+		   value is slightly arbitrary, but based on the values gotten
+		   with the free length being at a, 500 is also really high anyway */
+		for(k = 1; k <= 500; k+=1)
 		{
 			/* mu goes from almost zero to 1., which is pretty high
 			   for coefficient of *kinetic* friction */
@@ -180,7 +190,7 @@ double Fsn(double phi, double k, double l_0)
 	//Calculates the force of the spring in the normal direction
 	
 	/* If the initial length is greater than the length at point a, and 
-	   if Moore's law was true than the spring would be pushing and 
+	   if Hooke's law was true than the spring would be pushing and 
 	   invalidate our FBD, so we throw those values away.
 	*/
 	if(l_0 > l_atA)  
