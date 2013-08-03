@@ -7,14 +7,12 @@
 */
 
 /* TODO:
-       * Instead of throwing every value where l_0 is greater than 
-	     length at a in Fsn, only throw away points at which l_0 
-		 is greater than the length at that point.  Requires changes 
-		 in the v loop function.
-	   * I'm still betting there are even dumber mistakes, especially 
-	     made when I started getting desperate and when I started 
-		 applying the advice given on the last Thursday which I only 
-		 sort of understood.
+	* Instead of throwing every value where l_0 is greater than length at a 
+	  in Fsn, only throw away points at which l_0 is greater than the 
+	  length at that point.  Requires changes in the v loop function.
+	* I'm still betting there are even dumber mistakes, especially made when I 
+	  started getting desperate and when I started applying the advice given 
+	  on the last Thursday which I only sort of understood.
 	
 */
 
