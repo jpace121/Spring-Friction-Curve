@@ -15,7 +15,7 @@ Compilation tested on Mac OSX using clang.  Using **make** compile with:
 make all
 ```
 
-No guarantee code will compile with any other options on any other systems. (I'm ~90% sure it won't work on Windows.)
+No guarantee code will compile with any other compilers on any other operating systems. (I'm ~90% sure it won't work on Windows.)
 
 ##Use##
 
